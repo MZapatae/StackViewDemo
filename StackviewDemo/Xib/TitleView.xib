@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleView" customModule="StackviewDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Vqk-9Q-8RK"/>
+                <outlet property="titleLabel" destination="RXz-LL-wUD" id="oRr-Zk-UvV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ft7-Hi-y3i">
+                    <rect key="frame" x="158" y="17" width="59" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="2th-m6-iAk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXz-LL-wUD">
+                    <rect key="frame" x="16" y="52" width="343" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RXz-LL-wUD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="8ke-GO-nYv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RXz-LL-wUD" secondAttribute="bottom" constant="17" id="GaV-5k-o8V"/>
+                <constraint firstItem="ft7-Hi-y3i" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XP7-Jl-ucF"/>
+                <constraint firstItem="RXz-LL-wUD" firstAttribute="top" secondItem="ft7-Hi-y3i" secondAttribute="bottom" constant="8" id="YX9-UI-61G"/>
+                <constraint firstItem="ft7-Hi-y3i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="17" id="jme-ny-6PU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RXz-LL-wUD" secondAttribute="trailing" constant="16" id="xXe-Sk-IBE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="47.676161919040482"/>
+        </view>
+    </objects>
+</document>
